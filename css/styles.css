@@ -4,19 +4,18 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
-img {
+.gallery-image {
   display: block;
   object-fit: cover;
   width: 360px;
   height: 200px;
+  margin: 8px;
 }
 .gallery {
   padding: 24px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 24px;
   width: 1128px;
   margin: 0 auto;
 }
@@ -28,4 +27,9 @@ img {
 .gallery-link:hover img {
   width: 376px;
   height: 208px;
+  margin: 0;
+}
+
+.modal {
+  background-color: #2e2f42;
 }

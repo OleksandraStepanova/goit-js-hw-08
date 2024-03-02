@@ -79,3 +79,25 @@ function createGallery(arr) {
   </a>
 </li>`).join("");
 }
+
+galleryRef.addEventListener("click", openImg)
+
+function openImg(event){
+    event.preventDefault();
+    console.log(event.target.dataset.source);
+   
+const instance = basicLightbox.create(`
+    <div class="modal">
+        <img 
+        class="original-image"
+        src="${event.target.dataset.source}"
+        alt="${event.target.description}"
+        >
+    </div>
+`)
+    
+    
+console.log(basicLightbox);
+instance.show()
+}
+
